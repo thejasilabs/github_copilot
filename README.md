@@ -1,4 +1,3 @@
-
 # MCP Demo Server
 
 This repository demonstrates how to create and run a Model Context Protocol (MCP) server using Python. MCP is a protocol that enables seamless integration between AI assistants and external tools, allowing for enhanced functionality and capabilities.
