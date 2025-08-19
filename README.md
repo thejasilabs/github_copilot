@@ -71,8 +71,17 @@ This guide explains how to create and run a simple MCP server using the `fastmcp
 - Python 3.8 or newer
 - pip (Python package manager)
 
-### Installation
+### Setting up virtual ennvironment
+1.
+    ```bash
+    python -m venv venv
+    ```
+2. Activate scripts 
+    ```bash
+    .\venv\Scripts\activate
+    ```
 
+### Installation
 1. Install the `fastmcp` package:
    ```bash
    pip install fastmcp
@@ -135,6 +144,18 @@ Once the server is running, you can call the following tools:
 - `get_current_time()`: Returns the current date and time as a string.
 - `get_greeting(name)`: Returns a greeting message for the given name.
 - `multiply(x, y)`: Returns the product of two numbers.
+
+
+## Available MCP Commands and Example Usage
+
+The following commands are available in your MCP demo server:
+
+| Command           | Description                                 | Example Usage (Python shell)           |
+|-------------------|---------------------------------------------|----------------------------------------|
+| add_numbers       | Add two numbers together                    | add_numbers(2, 3)                      |
+| get_current_time  | Get the current date and time               | get_current_time()                     |
+| get_greeting      | Generate a greeting message for a name      | get_greeting("User")                   |
+| multiply          | Multiply two numbers                        | multiply(4, 5)                         |
 
 ### Example Output
 
