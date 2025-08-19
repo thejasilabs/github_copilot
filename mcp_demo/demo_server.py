@@ -24,6 +24,15 @@ def multiply(x: float, y: float) -> float:
     """Multiply two numbers."""
     return x * y
 
+@mcp.tool()
+def list_tools() -> str:
+    """List all available tools and their descriptions."""
+    tools_info = []
+    for tool_name, tool_func in mcp._tools.items():
+        doc = tool_func.__doc__ or "No description available"
+        tools_info.append(f"- {tool_name}: {doc}")
+    return "\n".join(tools_info)
+
 if __name__ == "__main__":
     # Run the MCP server
     mcp.run()
